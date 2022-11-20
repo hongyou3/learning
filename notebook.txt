@@ -1,0 +1,71 @@
+git config --global user.name 'Your Name'
+git config --global user.email 'email@example.com'
+
+git init
+将当前目录变成Git可以管理的仓库
+
+git add readme.txt
+把文件添加到仓库
+
+git commit -m 'wrote a readme file'
+把文件提交到仓库
+
+git status
+查看仓库当前的状态
+
+git diff
+查看修改内容
+
+git log
+查看提交日志
+
+git reset --hard HEAD^ # HEAD~100
+退回上一个版本
+
+git reset --hard [commit id]
+退回到指定版本
+
+git reflog
+查看git命令历史
+
+git checkout -- readme.txt
+丢弃工作区的修改
+
+git rm test.txt
+从版本库中删除该文件
+
+git remote add origin git@github.com:hongyou3/learning.git
+本地关联远程库
+
+git push -u origin master # git push origin master
+首次推送，关联本地master分支到远程master分支
+
+git remote -v
+查看远程库信息
+
+git remote rm origin
+解除本地与远程库的绑定关系
+
+git clone git@github.com:hongyou3/learning.git
+克隆一个本地库
+
+git branch dev
+git checkout dev
+创建dev分支，然后切换到dev分支 # git checkout -b dev
+
+git branch
+查看当前分支
+
+git merge dev
+合并指定分支到当前分支
+
+git branch -d dev
+删除dev分支
+
+git switch -c dev
+创建并切换到新的dev分支
+
+git switch master
+直接切换到已有的master分支
+
+
